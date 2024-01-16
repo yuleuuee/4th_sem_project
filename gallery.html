@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YULE ~ GALLERY</title>
+    <script
+      src="https://kit.fontawesome.com/84753a4e05.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/cont_med_gal.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://lib.baomitu.com/echarts/5.3.3/echarts.js"></script>
+  </head>
+  <body class="white">
+    <header>
+      <ul>
+        <li>
+          <a href="index.html"><i class="fas fa-home"></i>Home</a>
+        </li>
+        <li>
+          <a href="content.html"><i class="far fa-newspaper"></i>Content</a>
+        </li>
+        <li>
+          <a href="media.html"><i class="fa-solid fa-photo-film"></i></i>Media</a>
+        </li>
+        <li class="active">
+          <a href="gallery.html"><i class="fa-solid fa-chart-column"></i>Gallery</a>
+        </li>
+        <li>
+          <a href="magic.html"><i class="fa-solid fa-wand-magic-sparkles"></i>Magic</a>
+        </li>
+      </ul>
+      <span id="day" onclick="audio1.play()"
+        ><i class="fa-solid fa-lightbulb" style="color: black"></i
+      ></span>
+    </header>
+    <main class="main4">
+      <h1>*** GALLERY ***</h1>
+      <div id="div01">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide"
+              style="background-image: url(/images/autumn01.jpeg)"
+            ></div>
+            <div
+              class="swiper-slide"
+              style="background-image: url(/images/winter01.jpeg)"
+            ></div>
+            <div
+              class="swiper-slide"
+              style="background-image: url(/images/spring01.jpeg)"
+            ></div>
+            <div
+              class="swiper-slide"
+              style="background-image: url(/images/winter02.jpeg)"
+            ></div>
+            <div
+              class="swiper-slide"
+              style="background-image: url(/images/spring03.jpeg)"
+            ></div>
+            <div
+              class="swiper-slide"
+              style="background-image: url(/images/summer02.jpeg)"
+            ></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+      </div>
+      <div id="div02">
+        <h2>我喜欢的社交媒体</h2>
+        <h2>Use Of Ajax</h2>
+        <div id="inDiv1" style="height: 640px"></div>
+        <div id="inDiv2">
+          <div id="upper">
+            <div class="date"></div>
+            <div class="time">
+                  <span class="seconds"></span>
+            </div>            
+          </div>
+          <div id="lower">
+                <h2>GetHUb Users</h2>
+                <button id="btn">Load GetHUb Users</button><br/><br/>
+                <div id="users"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer_div">
+        <ul id="one">
+          <li><i class="fa-brands fa-weixin"></i>: yuleuuee</li>
+          <li><i class="fa-brands fa-qq"></i>: 27191240</li>
+          <li><i class="fa-regular fa-at"></i>: yuleuuee@gmail.com</li>
+        </ul>
+        <ul id="two">
+          <li><i class="fa-brands fa-facebook-square"></i>: Prabhav Gautam</li>
+          <li><i class="fa-brands fa-instagram-square"></i>: @im_prabhav</li>
+          <li><i class="fa-brands fa-twitter"></i>: @im_prabhav</li>
+        </ul>
+        <span><i class="fa-regular fa-copyright"></i>2022-2023 宇乐保留所有权利</span>
+      </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/js/gallery.js"></script>
+  </body>
+</html>
+
+

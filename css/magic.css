@@ -1,0 +1,322 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Times New Roman", Times, serif;
+  /* font-size: 1em; */
+}
+
+body {
+  background-color: #fff;
+  /* display: block;
+    justify-content: center; */
+}
+
+/**********************************************************/
+/************************** Header ************************/
+/**********************************************************/
+
+header > ul {
+  width: 40%;
+  float: right;
+  list-style: none;
+  margin: 0px 5px 5px 5px;
+  padding: 4px;
+  /* border: 1px dotted blue; */
+  display: flex;
+  justify-content: center;
+}
+
+header > ul > li {
+  width: 15%;
+  height: 23px;
+  padding: 5px 2px 0px 2px;
+  margin-left: 20px;
+  border-right: 2px dashed blue;
+  border-left: 2px dashed blue;
+}
+
+header > ul > li a {
+  text-decoration: none;
+  margin-left: 8px;
+  margin-top: 10px;
+}
+
+header > ul > li:hover a {
+  color: white;
+  transition: 0.5s ease;
+}
+header > ul > li:hover {
+  border-radius: 15px;
+  background-color: black;
+  transition: 0.5s ease;
+  cursor: pointer;
+  border-color: transparent;
+  box-shadow: 2px 2px 5px gray;
+}
+
+.active a {
+  color: white;
+}
+.active {
+  border-radius: 15px;
+  background-color: black;
+  border-color: transparent;
+  box-shadow: 2px 2px 5px grey;
+}
+
+i::before {
+  letter-spacing: 0.5em;
+}
+
+/* flow-root takes the other block to next line */
+header {
+  margin-bottom: 20px;
+  display: flow-root;
+}
+/* flow-root takes the other block to next line */
+
+/**********************************************************/
+/************************** Main **************************/
+/**********************************************************/
+
+h1 {
+  text-align: center;
+  width: 40%;
+  border-bottom: 4px dotted brown;
+  border-radius: 50px;
+  text-shadow: -2px -2px beige;
+  margin-left: 420px;
+  margin-bottom: 25px;
+}
+
+.magic_form {
+  width: 90%;
+  /* height: 100vh; */
+  border-left: 4px double blue;
+  border-right: 4px double blue;
+  margin: 10px 0px 10px 60px;
+  display: flex;
+  justify-content: center;
+}
+
+#message1,
+#message2 {
+  width: 55%;
+  color: brown;
+  margin-bottom: 5px;
+  margin-left: 110px;
+  text-align: center;
+  /* border: 1px solid red ; */
+  cursor: pointer;
+}
+.exc {
+  color: red;
+  padding-left: 5px;
+}
+
+.form {
+  width: 70%;
+  /* height:350px; */
+  padding: 10px;
+  border-top: 4px double blue;
+  border-bottom: 4px double blue;
+  border-radius: 50px;
+  margin: 40px 0px 20px 0px;
+}
+
+.form:focus-within {
+  background-color: hsla(174, 100%, 50%, 0.1);
+}
+
+.inp {
+  width: 50%;
+  padding: 1em 0.5em;
+  text-align: center;
+  margin-left: 200px;
+}
+
+.form > p {
+  margin-left: 75px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+
+input:not([type="submit"]) {
+  width: 80%;
+  height: 35px;
+  font-size: 18px;
+  text-align: left;
+  padding: 0 1em;
+  box-shadow: 2px 4px 14px 4px rgb(112 114 124 / 20%);
+  border-radius: 20px;
+  border: transparent;
+}
+
+input:not([type="submit"]):focus {
+  background-color: rgb(249, 235, 235);
+}
+
+.eye {
+  /* margin-top: 1px; */
+  width: 30px;
+  padding: 1px;
+  margin-left: 5px;
+  position: absolute;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#btn {
+  width: 60%;
+  height: 40px;
+  font-size: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: transparent;
+}
+#btn:hover {
+  box-shadow: 2px 4px 14px 4px rgba(85, 110, 237, 0.2);
+  cursor: pointer;
+}
+
+.forgot {
+  width: 80%;
+  /* border: 2px dashed white; */
+  margin: 10px auto;
+  text-align: center;
+  color: black;
+  font-size: 1.2em;
+}
+#btn2 {
+  padding: 2px 4px;
+  border: 1px solid blue;
+  border-radius: 20px;
+}
+#btn2:hover {
+  cursor: pointer;
+  box-shadow: 2px 4px 4px rgba(85, 110, 237, 0.2);
+}
+
+.mima1,
+.mima2 {
+  margin-right: 90px;
+  float: right;
+}
+
+
+/*************** alert box part **************/
+
+#alertBox{
+  width: 600px;
+  height: 300px;
+  color: black;
+  /* border: 2px solid ; */
+  border-radius: 30px;
+  position: fixed;;
+  /* top: 50%;
+  left: 50%; */
+  background-color: white;
+  visibility:hidden;
+  opacity: 1;
+  box-shadow: 5px 5px 10px grey, -5px -5px 10px gray;
+}
+
+#alertBox>span{
+  color: orange;
+  font-size: 2em;
+  margin-left: 15px;
+}
+#cn_alert{
+  text-align: center;
+  padding-left: 120px;
+}
+
+#alertBox>h2{
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 30px;
+}
+.fa-xmark{
+  color: red;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+/* ************color change********** */
+
+#color_change {
+  width: 50%;
+  margin-left: 350px;
+  padding: 10px;
+  /* border: 1px dotted black;  */
+}
+#color_change > input {
+  margin-left: 35px;
+  border-radius: 0%;
+  background-color: rgb(230, 248, 255);
+  box-shadow: 8px 8px 2px lightpink, -8px -8px 2px lightgreen;
+  text-align: center;
+  border: transparent;
+  margin-bottom: 10px;
+}
+#color_change > label {
+  /* text-align: center; */
+  margin-left: 250px;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+
+/***************************************************************************************************************/
+/************************************************ Footer ******************************************************/
+/****************************************************************************************************************/
+
+.footer_div {
+  width: 90%;
+  border-top: 8px groove pink;
+  border-bottom: 8px groove pink;
+  padding: 4px;
+  margin: 35px 0px 5px 60px;
+}
+
+.footer_div > ul {
+  width: 90%;
+  padding: 3px;
+  /* border: 1px dotted black; */
+  margin: 20px 0px 20px 50px;
+  list-style: none;
+  /* display: flex;
+    justify-content: center; */
+}
+
+#one > li {
+  margin-left: 250px;
+  /* border: 1px dotted blue; */
+  display: inline-block;
+}
+#two > li {
+  /* border: 1px dotted blue; */
+  display: inline-block;
+}
+
+#two > li:first-child {
+  margin-left: 50px;
+}
+#two > li:nth-child(2) {
+  margin-left: 240px;
+}
+#two > li:last-child {
+  margin-left: 190px;
+}
+
+.footer_div > ul > li:hover {
+  cursor: pointer;
+}
+
+/****************************************/
+

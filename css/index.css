@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: purple;
+}
+
+.bg {
+  background-image: url(/photoes/china3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* body {
+  transition: 0.5s linear;
+} */
+
+/************ Header Part ***************/
+@font-face {
+  font-family: type1;
+  src: url(/photoes/type1.ttf);
+}
+
+h1 {
+  /* width: 100%; */
+  font-family: type1;
+  text-align: center;
+  color: #fff;
+  font-size: 4em; /*4*16px=64px*/
+  text-shadow: 5px 5px 5px brown;
+}
+
+nav {
+  margin-left: 5px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+nav > ul {
+  list-style-type: none; /*removest the dot */
+  margin: 5px 8px; /* top-bottom  left-right*/
+}
+
+li {
+  padding: 3px 0px;
+  border-top: 1px double #000;
+  border-bottom: 1px double white;
+  border-radius: 15px;
+  margin-top: 1.5em;
+}
+li > a {
+  font-size: 1em;
+  text-decoration: none;
+  /* border-radius: 15px;  */
+  padding: 0.3em 1em; /* top-bottom  left-right*/ /*1em =1*16px(medium "font-size:" of previous block)*/
+}
+
+li:hover {
+  color: #fff;
+  background-color: #000;
+  border-color: transparent;
+  box-shadow: 2px 2px 4px purple;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+li:hover a > i,
+li:hover > a {
+  color: white;
+  transition: 0.5s ease;
+}
+
+i::before {
+  letter-spacing: 0.4em;
+}
+
+.active {
+  background-color: black;
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 2px 2px 4px purple;
+  border-color: transparent;
+}
+.active > a > i,
+.active > a {
+  color: #fff;
+}
+
+img {
+  display: flow-root;
+  width: 50px;
+  height: 53px;
+  position: fixed;
+  right: 8px;
+  bottom: 5px;
+}
+
+#sun-moon {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  padding: 6px;
+  border: 6px double red;
+  box-shadow: 3px 3px 7px red, -3px -3px 7px red;
+  background-color: lightyellow;
+  border-radius: 50%;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+#sun-moon > i {
+  padding: 3px;
+  font-size: 2em;
+  color: #000;
+}
+
+/************ FOR COLOR CHANGE ****************/
+.day {
+  color: black;
+  background: linear-gradient(
+    to bottom,
+    #a088f9 0%,
+    #ffc988 74%
+  ); /*#e288f9*/ /**/
+}
+
+.ev {
+  color: black;
+  background: linear-gradient(
+    to bottom,
+    #341a05 10%,
+    #f7755b 70%,
+    #ffc46b 100%
+  );
+}
+.night {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 30%,
+    rgba(0, 0, 0, 0.6) 60%,
+    rgba(0, 0, 0, 0.4) 85%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+}

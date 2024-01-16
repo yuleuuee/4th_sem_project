@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>YULE ~ MAGIC PAGE</title>
+      <link rel="stylesheet" href="/css/magic.css" />
+      <script src="https://kit.fontawesome.com/84753a4e05.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li>
+          <a href="index.html"><i class="fas fa-home"></i>Home</a>
+        </li>
+        <li>
+          <a href="content.html"><i class="far fa-newspaper"></i>Content</a>
+        </li>
+        <li>
+          <a href="media.html"><i class="fa-solid fa-photo-film"></i>Media</a>
+        </li>
+        <li>
+          <a href="gallery.html"><i class="fa-solid fa-chart-column"></i>Gallery</a>
+        </li>
+        <li class="active">
+          <a href="magic.html"><i class="fa-solid fa-wand-magic-sparkles"></i>Magic</a>
+        </li>
+      </ul>
+    </header>
+    <main id="main4">
+      <h1>MAGIC PAGE</h1>
+      <div class="magic_form">
+        <div class="form">
+          <form name="form" class="form" action="index.html" autocomplete="off"  method="post">
+          <div class="inp i01">
+            <label for="user_name">用户名</label>
+            <div id="message1" onclick="remove1()"></div>
+            <input type="text" id="user_name" onblur="myFunction()"name="user_name" placeholder="输入用户名"/>
+          </div>
+          <div class="inp i02">
+            <label for="pass_word">密码</label>
+            <div id="message" onclick="remove2()"></div>
+            <input type="password" id="pass_word" name="pass_word" placeholder="输入密码"/>
+            <img class="eye" />
+          </div>
+          <div class="inp">
+            <button id="btn" onclick="fun1()">提交</button>
+          </div>
+          <p class="forgot">
+            忘记用户名或者密码 ?
+            <button id="btn2" onclick="fun3()">点击这里</button>
+          </p>
+          <!-- </form> -->
+        </div>
+      </div>
+      <div id="alertBox">
+          <span><i class="fa-solid fa-xmark"></i></span>
+          <hr><hr>
+          <h2>Your Request Is Not Valid <br><br>Try Again!!</h2><br>
+          <span id="cn_alert">( 用户名或者密码错误 )</span>
+      </div>
+      <span id="mimaid" class="mima1"></span>
+      <div id="color_change"></div>
+    </main>
+    <footer>
+      <div class="footer_div">
+        <ul id="one">
+          <li><i class="fa-brands fa-weixin"></i>: yuleuuee</li>
+          <li><i class="fa-brands fa-qq"></i>: 27191240</li>
+          <li><i class="fa-regular fa-at"></i>: yuleuuee@gmail.com</li>
+        </ul>
+        <ul id="two">
+          <li><i class="fa-brands fa-facebook-square"></i>: Prabhav Gautam</li>
+          <li><i class="fa-brands fa-instagram-square"></i>: @im_prabhav</li>
+          <li><i class="fa-brands fa-twitter"></i>: @im_prabhav</li>
+        </ul>
+        <span><i class="fa-regular fa-copyright"></i>2022-2023 宇乐保留所有权利</span >
+      </div>
+    </footer>
+    <script src="/js/magic.js"></script>
+  </body>
+</html>

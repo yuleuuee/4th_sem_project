@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yule ~ MEDIA PAGE</title>
+    <script src="https://kit.fontawesome.com/84753a4e05.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/cont_med_gal.css" />
+  </head>
+  <body class="white">
+    <header>
+      <ul>
+        <li>
+          <a href="index.html"><i class="fas fa-home"></i>Home</a>
+        </li>
+        <li>
+          <a href="content.html"><i class="far fa-newspaper"></i>Content</a>
+        </li>
+        <li class="active">
+          <a href="media.html"><i class="fa-solid fa-photo-film"></i>Media</a>
+        </li>
+        <li>
+          <a href="gallery.html"><i class="fa-solid fa-chart-column"></i>Gallery</a>
+        </li>
+        <li>
+          <a href="magic.html"
+            ><i class="fa-solid fa-wand-magic-sparkles"></i>Magic</a>
+        </li>
+      </ul>
+      <span id="day" onclick="audio1.play()"><i class="fa-solid fa-lightbulb"></i></span>
+    </header>
+    <main class="main2">
+      <h1>*** MEDIA PAGE ***</h1>
+      <div class="main-div">
+        <div class="div01">
+          <h2></h2>
+          <div id="adv1"></div>
+          <div id="adv2"></div>
+        </div>
+        <div class="tiktok">
+          <span class="tik_logo">
+            <i class="fa-brands fa-tiktok"></i>
+          </span>
+          <span class="name">@yuleuuee</span>
+          <ul id="flyComments"></ul>
+          <ul id="write_Comment_ul">
+            <input type="text" placeholder="说点什么..." />
+            <li><i class="fa-solid fa-gift"></i></li>
+            <li><i class="fa-solid fa-ellipsis"></i></li>
+            <li class="like_up"><i class="fa-solid fa-thumbs-up"></i></li>
+          </ul>
+        </div>
+        <div class="div03">
+          <section id="printArea">
+            <h2>"Shift + Z" Key</h2>
+            <img src="/images/water.jpeg" alt="Lake" />
+          </section>
+          <span id="print"><i class="fa-solid fa-print"></i>Click To Print Image</span>
+          <section id="selectAllarea">
+            <h2>Choose Your Favorite Seasons :</h2>
+            <div id="check">
+              <div>
+                <input type="checkbox" name="box" id="top" onclick='checkUncheck()'>
+                <label for="top">Check All</label>
+              </div>
+              <div>
+                <input type="checkbox" name="box" id="check1">  
+                <label for="check1">SUMMER</label>
+              </div>
+              <div>
+                <input type="checkbox" name="box" id="check2">  
+                <label for="check2">WINTER</label>
+              </div>
+              <div>
+                <input type="checkbox" name="box" id="check3">
+                <label for="check3">AUTUMN</label>
+              </div>
+              <div>
+                <input type="checkbox" name="box" id="check4">
+                <label for="check4">SPRING</label>
+              </div>
+              
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer_div">
+        <ul id="one">
+          <li><i class="fa-brands fa-weixin"></i>: yuleuuee</li>
+          <li><i class="fa-brands fa-qq"></i>: 27191240</li>
+          <li><i class="fa-regular fa-at"></i>: yuleuuee@gmail.com</li>
+        </ul>
+        <ul id="two">
+          <li><i class="fa-brands fa-facebook-square"></i>: Prabhav Gautam</li>
+          <li><i class="fa-brands fa-instagram-square"></i>: @im_prabhav</li>
+          <li><i class="fa-brands fa-twitter"></i>: @im_prabhav</li>
+        </ul>
+        <span><i class="fa-regular fa-copyright"></i>2022-2023 宇乐保留所有权利</span>
+      </div>
+    </footer>
+    <script src="/js/media.js"></script>
+  </body>
+</html>

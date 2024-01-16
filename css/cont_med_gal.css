@@ -1,0 +1,832 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  font-size: medium; 
+}
+
+*::selection {
+  background-color: grey;
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.2em;
+  text-align: center;
+  margin: 30px 0px;
+  text-shadow: 3px 3px 10px rgb(235, 148, 237);
+}
+
+h2{
+  font-size: 1.8em;
+  text-align: center;
+}
+
+/**************************************************/
+/******************  HEADER PART ******************/
+
+
+header {
+  margin-bottom: 20px;
+  display: flow-root;
+}
+
+header > ul {
+  float: right;
+  list-style-type: none;
+  margin: 5px 0px;
+}
+
+header > ul > li {
+  height: 23px;
+  display: inline-block;
+  padding-top: 5px;
+  margin-right: 1em;
+  border-right: 1px dashed #fff;
+  border-left: 1px dashed #fff;
+  /* background-color: green; */
+}
+
+header > ul > li a {
+  /* font-size: 1em; */
+  color: #fff;
+  text-decoration: none;
+  padding: 0em 1em;
+}
+
+li:hover a,
+li:hover > a > i {
+  color: #000;
+  /* color:#fff; */
+  transition: 0.5s ease;
+}
+
+header > ul > li:hover {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px black;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.active {
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px black;
+  background-color: #fff;
+}
+
+.active > a,
+.active > a > i {
+  color: #000;
+}
+
+i {
+  color: #fff;
+  font-size: 1em;
+}
+
+i::before {
+  letter-spacing: 0.5em;
+}
+
+
+
+/**********************************************************/
+/************************* Footer Part *************************/
+
+
+.footer_div {
+  width: 95%;
+  border-top: 3px dashed grey;
+  border-bottom: 3px dashed grey;
+  padding: 4px;
+  margin: 20px 0px 5px 30px;
+  display: flow-root;
+}
+
+.footer_div > ul {
+  width: 90%;
+  padding: 3px;
+  /* border: 1px dotted black; */
+  border-top: 2px dotted purple;
+  border-bottom: 2px dotted purple;
+  border-radius: 20px;
+  margin: 20px 0px 20px 50px;
+  list-style: none;
+}
+
+.footer_div > ul > li:hover {
+  cursor: pointer;
+}
+
+#one > li {
+  margin-left: 250px;
+  /* border: 1px dotted blue; */
+  display: inline-block;
+}
+#two > li {
+  /* border: 1px dotted blue; */
+  display: inline-block;
+}
+
+#two > li:first-child {
+  margin-left: 50px;
+}
+#two > li:nth-child(2) {
+  margin-left: 240px;
+}
+#two > li:last-child {
+  margin-left: 190px;
+}
+
+#one > li > i,
+#two > li > i,
+.footer_div > span > i {
+  color: grey;
+}
+
+
+/***********************************************************************************************************************/
+/****************************************************** 2. CONTENT PART ****************************************************/
+/***********************************************************************************************************************/
+
+
+/**************** Bulb *****************/
+
+#day {
+  height: 35px;
+  width: 35px;
+  border: 2px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: whitesmoke;
+  position: fixed;
+  top: 20px;
+  left: 30px;
+  text-align: center;
+}
+
+#day > i {
+  padding-top: 5px;
+  padding-left: 8px;
+  font-size: 1.5em;
+  color: #000;
+  /* text-shadow: 2px 2px 3px black,-1px -1px 3px black; */
+}
+
+.black {
+  color: white;
+  background: linear-gradient(270deg, #9e9b9b 5%, #000000 40%);
+  transition: 0.8s ease;
+}
+.white {
+  color: black;
+  background: linear-gradient(270deg, #e96196 10%, #ffffff 74%);
+  transition: 0.8s ease;
+}
+
+
+/**************** Main *****************/
+
+aside {
+  float: left;
+  width: 22%;
+  margin-left: 20px;
+  border: 1px dashed plum;
+  border-left: 8px double plum;
+  border-right: 8px double plum;
+  border-radius: 50px;
+  margin-bottom: 40px;
+}
+article {
+  float: right;
+  width: 70%;
+  margin-right: 40px;
+  /* border-radius: 20px; */
+  border: 1px dotted rgb(174, 90, 185);
+  border-top: 6px solid rgb(174, 90, 185);
+  border-bottom: 6px solid rgb(174, 90, 185);
+  border-radius: 50px;
+}
+
+
+
+aside > section {
+  width: 80%;
+  border-top: 3px solid gold;
+  border-bottom: 3px solid gold;
+  border-radius: 30px;
+  margin: 40px 0px 40px 30px;
+}
+
+h3 {
+  text-align: center;
+  padding-top: 10px;
+}
+figure {
+  width: 90%;
+  margin: 2em 0.8em;
+}
+
+figure > img {
+  width: 100%;
+  margin-right: 2em;
+  border-radius: 1em;
+  box-shadow: 2px 4px 14px 4px rgb(112 114 124 / 20%);
+}
+
+figure > img:hover {
+  box-shadow: 2px 2px 6px black;
+  cursor: pointer;
+  
+
+}
+
+figcaption {
+  text-align: center;
+}
+article > section {
+  width: 85%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* border: 1px solid gold; */
+  border-left: 3px solid gold;
+  border-right: 3px solid gold;
+  border-radius: 50px;
+  margin: 40px 0px 40px 75px;
+  position: relative;
+}
+
+section h2 {
+  text-align: center;
+  margin: 20px;
+}
+article > section > img {
+  display: flex;
+  width: 80%;
+  height: 400px;
+  border-radius: 2em;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+}
+
+.content0,.content1,.content2,.content3 {
+  width: 78%;
+  /* border: 1px dotted green; */
+  margin: 5px 0px 5px 100px;
+  font-size: 1.2em;
+}
+
+a.expand, a.collapse {
+  text-decoration: none;
+  color: blue;
+  margin-left: .5rem;
+  cursor: pointer;
+}
+
+.like {
+  width: 70%;
+  /* border: 1px dotted green; */
+  margin: 5px 0px 5px 100px;
+}
+
+#sml_box,
+.sml_box {
+  margin: 5px 0px 5px 100px;
+}
+
+.cmt_box>li{
+  cursor: pointer;
+}
+
+#sml_box > input,
+.sml_box > input {
+  width: 33%;
+  height: 28px;
+  font-size: 1.2em;
+  text-align: left;
+  padding: 0 1em;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  background-color: hsl(0, 0%, 90%);
+  box-shadow: 2px 4px 14px 4px rgb(112 114 124 / 20%);
+}
+
+#spanin,
+.spanin {
+  width: 20px;
+  height: 50px;
+  border: 1px solid black;
+  margin-left: 80px;
+  font-size: 15px;
+  padding: 4px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#sml_box + ul,
+.sml_box + ul {
+  background-color: transparent;
+  margin: 5px 0px 5px 90px;
+  width: 70%;
+}
+
+#sml_box + ul > li,
+.sml_box + ul > li {
+  display: inline-block;
+  width: 98%;
+  font-size: 1.2em;
+  padding-left: 0px;
+  border-top: 1px dotted black;
+  border-bottom: 1px dotted black;
+  margin: 2px 10px 2px;
+}
+
+.like > ul > li {
+  display: inline-block;
+  width: 75px;
+  padding: 5px 0px 5px 15px;
+  /* border: 1px double black ; */
+  box-shadow: 2px 4px 14px 4px rgb(112 114 124 / 20%);
+
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+#like_num0,
+#like_num1,
+#like_num2,
+#like_num3 {
+  font-size: 1.5em;
+}
+
+.hea0,
+.hea1,
+.hea2,
+.hea3 {
+  /* for heart on every location*/
+  position: absolute;
+}
+
+.like > ul > li > .fa-solid {
+  font-size: 1.6em;
+  text-indent: 0.2em;
+  color: gray;
+  margin-left: 10px;
+}
+.like > ul > li > .fa-solid:hover {
+  text-shadow: 2px 2px 3px black;
+  cursor: pointer;
+}
+
+/**************** Scroll up *****************/
+
+#goTop {
+  float: right;
+  padding: 3px 8px 3px 8px;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin: 40px 50px 40px 0px;
+  cursor: pointer;
+
+}
+#goTop:hover{
+  box-shadow: 2px 2px 6px black;
+}
+
+.fa-arrow-turn-up {
+  color: #000;
+  font-size: 1em;
+  padding: 2px;
+}
+
+
+#scrlUpBOx{
+  width: 100%;
+  display: flow-root;
+}
+
+
+/*******************************************************************************************************************/
+/********************************************* 3. MEDIA PAGE **********************************************************/
+/*******************************************************************************************************************/
+
+
+.main-div {
+  width: 95%;
+  border-left: 3px solid blue;
+  border-right: 3px solid blue;
+  border-radius: 30px;
+  margin: 50px 0px 20px 33px;
+  display: flex;
+  justify-content: center;
+}
+
+.div01,
+.div03 {
+  width: 25%;
+  margin: 30px 10px;
+}
+
+.div01{
+  border-right: 3px dotted gray;
+  border-radius: 30px;
+}
+.div03{
+  border-left: 3px dotted gray;
+  border-radius: 30px;
+}
+
+h2 {
+  text-align: center;
+}
+
+/************ ads div ************* */
+
+.div01 > div /*#adv1,#adv2*/{
+  width: 95%;
+  height: 380px;
+  border-left: 5px solid brown;
+  margin: 10px 0px 30px 7px;
+}
+
+#adv1>img,#adv2>img {
+  width: 95%;
+  height: 350px;
+  border: 1px solid brown;
+  border-radius: 50px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+#adv2>img{
+  opacity: 0.5;
+}
+
+.fa-hand-point-down{
+  color: gray;
+}
+
+.fa-delete-left{
+  color: grey;
+  cursor: pointer;
+  font-size: 1.5em;
+  position: relative;
+}
+
+/* ******* tikTok part *********** */
+
+.tiktok {
+  width: 40%;
+  background-image: url(/images/tiktok01.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  /* border: 2px dotted black; */
+  border-radius: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 30px;
+  position: relative;
+}
+
+.tik_logo {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  padding: 2px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.name {
+  width: 50px;
+  color: #fff;
+  font-size: 1.2em;
+  background-color: transparent;
+  position: absolute;
+  top: 64px;
+  left: 5px;
+}
+
+
+.tik_logo > i {
+  font-size: 3em;
+  margin: 8px 0px 0px 10px;
+  text-shadow: 2px 2px 1px red, -2px -2px 1px rgb(65, 196, 239);
+}
+
+.fa-thumbs-up:hover,
+.fa-ellipsis:hover,
+.fa-gift:hover
+{
+  text-shadow: 2px 2px 3px black;
+}
+
+/********** Comment part ************/
+
+#write_Comment_ul {
+  width: 100%;
+  height: 60px;
+  padding: 3px 0px;
+  /* border: 2px solid red; */
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+}
+
+#write_Comment_ul> li {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 10px;
+  background-color: grey;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.write_Comment_ul>li>i:hover{
+  text-shadow: 2px 2px 3px black;
+}
+
+#write_Comment_ul> input {
+  width: 60%;
+  height: 30px;
+  color: #fff;
+  font-size: 1.5em;
+  background-color: transparent;
+  border-color: transparent;
+  padding: 2px 0.5em;
+  border-top: 2px solid grey;
+  border-bottom: 1px solid grey;
+  border-radius: 20px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+/*********** flyComments **********/
+
+.tiktok > ul > li > i {
+  color: white;
+  font-size: 2em;
+  margin: 8px 0px 0px 10px;
+}
+#flyComments{
+  /* border: 2px solid red; */
+  color: white;
+  font-size: 1.2em;
+  display: block;
+  position: absolute;
+  list-style-type: none;
+  top:675px;
+}
+#flyComments>li{
+  margin-left: 20px;
+}
+
+/******* Fly up Heart part ******/
+
+div + div {
+  margin-top: 1em;
+}
+.tip {
+  color: tomato;
+  font-weight: bold;
+  position: fixed; 
+  animation: flyout 1.5s ease-in forwards;
+}
+@keyframes flyout {
+  from {
+    transform: translateY(-10px);
+    opacity: 1;
+    font-size: 2em;
+  }
+  to {
+    transform: translateY(-300px);
+    opacity: 0%;
+    font-size: 3em;
+  }
+}
+.like_up {
+  cursor: pointer;
+}
+
+
+/******* print part ******/
+
+#print{
+  padding: 6px 6px ;
+  border: 1.5px solid brown;
+  background-color: transparent;
+  border-radius: 80px;
+  margin: 10px 84px;
+  cursor: pointer;
+
+}
+.fa-print{
+ color: black
+ 
+}
+
+#print:hover{
+  box-shadow: 2px 2px 5px black;
+}
+
+/******* Select all part ******/
+
+.div03 > section > img {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+
+.div03 > section {
+  width: 90%;
+  margin: 25px 15px;
+}
+
+#selectAllarea{
+  width: 90%;
+  border: 1px solid black;
+  margin: 25px 15px;
+  border-radius: 50px;
+}
+
+#check>div{
+  /* border: 1px solid black; */
+  padding: 1em 0em 1em 4em;
+  margin-top: 16px;
+  /* border-radius: 30px; */
+}
+
+#check>div:first-child{
+  border-top: 5px double black;
+  border-bottom: 5px double black;
+  padding-left: 1.5em;
+  font-size: 18px;
+}
+input[type='checkbox']{
+ width: 20px;
+ height: 20px;
+ cursor: pointer;
+}
+
+label{
+  font-size: 1.5em;
+  margin-left: 20px;
+}
+
+
+
+
+/*******************************************************************************************************************/
+/**************************************************** 4. GALLERY *****************************************************/
+/*******************************************************************************************************************/
+
+.main4 > h1 {
+  margin-bottom: 10px;
+}
+#div01 {
+  width: 90%;
+  height: 600px;
+  padding: 5px;
+  border-right: 5px groove grey;
+  border-left: 5px groove grey;
+  /* border-radius: 50px; */
+  margin: 20px 0px 20px 70px;
+}
+
+
+
+/***** slider ********/
+
+.swiper {
+  width: 80%;
+  height: 500px;
+  padding: 5px;
+  /* border: 2px dotted blue; */
+  /* margin: 20px 0px 20px 70px; */
+  margin-top: 50px;
+}
+
+.swiper-slide {
+  text-align: center;
+  background-size: cover;
+}
+
+
+/* ********************************* */
+
+#div02 {
+  width: 90%;
+  padding: 5px;
+  margin: 20px 0px 30px 70px;
+
+}
+
+#div02 >h2 {
+  width: 50%;
+  padding: 3px;
+  border-bottom: 5px double red;
+  margin-left: 80px;
+  float: left;
+  text-align: center;
+  display: flow-root;
+}
+#div02 >h2 +h2{
+  width: 30%;
+  padding: 3px;
+  border-bottom: 5px double red;
+  margin-right: 50px;
+  float: right;
+  text-align: center;
+  display: flow-root;
+}
+
+#inDiv1 {
+  width: 60%;
+  border: 2px dotted brown;
+  border-radius: 30px;
+  margin-left: 10px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+#inDiv2 {
+  width: 33%;
+  /* border: 2px dotted black; */
+  /* border-radius: 30px; */
+  margin-left:  30px;
+  margin-top: 20px;
+  display: inline-block;
+  position: absolute;
+  right: 80px;
+}
+
+#upper,#lower{
+  width: 95%;
+  /* height: 355px; */
+  display: block;
+  border: 5px double black;
+  padding-top: 20px;
+  margin:10px 0px 10px 8px;
+}
+
+/****************** date and time *************/
+
+.date{
+  font-size: 2em;
+  text-align: center;
+}
+.time{
+  font-size: 3em;
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top : 0px;
+}
+
+table{
+  width: 90%;
+  margin-left: 24px;
+}
+td,tr{
+  border: 2px solid black;
+  padding: 0px 30px;
+  letter-spacing: 1px;
+  border-radius: 20px;
+  
+}
+
+
+/************ Get userHUB ************** */
+
+td:hover{
+    box-shadow: 1px 1px 10px grey, -1px -1px 10px grey;
+    cursor: pointer;
+}
+
+#lower>button{
+  padding: 5px;
+  background-color: palevioletred;
+  border-radius: 20px;
+  margin: 10px 0px 0px 30px;
+  cursor: pointer;
+}
+
+.user{
+  display: inline-block;
+  margin-left: 38px;
+  margin-bottom: 20px;
+}
+.user>ul{
+  list-style-type: none;
+}
+
